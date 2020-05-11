@@ -1,0 +1,58 @@
+/**  
+ * 弹出菜单插件
+ * @see 通过点击、左键、右键等事件触发弹出菜单
+ * @see RxmPopMenu插件使用示例
+ * ```
+   //插件引用
+   define(['RxmPopMenu'],function(rxmtpopmenu){
+
+   }
+ * ```
+ * @version  1.4.3 
+ */
+
+/**
+ * 弹出菜单参数对象
+ */
+type popMenuArgs = {
+   /**
+    * 菜单的id 
+    */
+   id?: string,
+   /**
+    * 可选菜单的 html 
+    */
+   htmlText?: string,
+   /**
+    * 可选菜单url
+    */
+   url?: string,
+   /**
+    * 菜单的模板id 
+    */
+   templateId?: string,
+   /**
+    * 可选 菜单位置 默认 undefined 菜单的html位置， touchPosition  手指或者鼠标触碰点
+    */
+   positionIn:string,
+   /**
+    * 可选 菜单背景充填方式  no,round,upDown,leftRight 默认为no
+    */
+   tapAroundDisable?:string,
+   /**
+    * 菜单cmd 回调时的数据
+    */
+   data?:Object,
+   /**
+    * 菜单的父容器
+    */
+   parentElement?:HTMLElement
+}
+
+interface RxmPopMenu{
+    /**
+     * 弹出菜单
+     * @param cfg 弹出菜单参数对象
+     */
+    popMenu(cfg:popMenuArgs):void
+}
