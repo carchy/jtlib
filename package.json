@@ -1,12 +1,19 @@
 {
-  "name": "jtlib",
-  "version": "1.0.0",
+  "name": "@carchy/jtlib",
+  "version": "1.0.2",
   "description": "Preliminary knowledge of library",
   "main": "index.js",
   "repository": "https://github.com/carchy/jtlib.git",
   "author": "carchy",
   "license": "MIT",
-  "devDependencies": {
+  "module": "lib/index.js",
+  "files": [
+    "lib",
+    "declaration",
+    "index.js"
+  ],
+  "dependencies": {
+
     "typescript": "^3.8.3"
   }
 }

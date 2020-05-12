@@ -64,7 +64,7 @@ type gridSheetArg = {
        title?: String
 }
 
-class RxmActionSheet{
+export default class RxmActionSheet{
       /**
        * 打开列表型菜单
        * @param arg  列表型菜单参数

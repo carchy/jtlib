@@ -13,7 +13,7 @@
  */
 
 /** */
-class RxmAppTool{
+export default class RxmAppTool{
     /**
      * 序列化表单元素为JSON对象（兼容工作流项目组）
      * @param form  Form表单id或表单jquery DOM对象

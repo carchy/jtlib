@@ -93,7 +93,7 @@ declare type onlineAudioArg = {
     /**音频文件id,为下载插件中设置的fileId*/
     url: String;
 };
-interface RxmAudio {
+export default interface RxmAudio {
     /**
      * 打开音频文件
      * @param arg  打开音频参数
@@ -140,3 +140,4 @@ interface RxmAudio {
      */
     openOnlineAudio(arg: onlineAudioArg): void;
 }
+export {};
